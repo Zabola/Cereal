@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+
+
+{% block body %}
+
+
+		
+
+
+
+		<ul>
+		<li><b>Manufacturer:</b> {{ notcereal.manufacturer }} </li>
+		{% for fact in notcereal.nutritional_information.nutrition_list %} </br>
+			<li>{{ fact }}</li>
+		{% endfor %}
+
+
+
+		</ul>
+
+
+{% endblock %}
+
+	
