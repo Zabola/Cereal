@@ -55,7 +55,7 @@ def cereal_detail(request, pk):
 
     context = {}
     cereal = Cereal.objects.get(pk=pk)
-    context['notcereal'] = cereal
+    context['cereal'] = cereal
 
     return render_to_response('cereal_detail.html', context, context_instance=RequestContext(request))
 

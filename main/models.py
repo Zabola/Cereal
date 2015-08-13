@@ -19,6 +19,8 @@ class Cereal(models.Model):
     manufacturer = models.ForeignKey('main.Manufacturer', null=True) #One To Many Relationship with the Manufacturer
     type = models.CharField(max_length=30, null=True)
     display_shelf = models.FloatField(null=True)
+    image = models.ImageField(upload_to="cereal", null=True)
+    info = models.TextField()
    
     
 
